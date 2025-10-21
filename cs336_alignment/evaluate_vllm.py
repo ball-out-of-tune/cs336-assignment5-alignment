@@ -229,7 +229,12 @@ def main():
     
     # 打印一些示例用于调试
     print(f"\n示例提示: {prompts[0][:200]}...")
+    print(f"\n示例提示: {prompts[1][:200]}...")
+    print(f"\n示例提示: {prompts[2][:200]}...")
     print(f"示例答案: {gold_answers[0]}")
+    print(f"示例答案: {gold_answers[1]}")
+    print(f"示例答案: {gold_answers[2]}")
+
     
     # 3. 设置采样参数 - 确保模型能生成完整的格式
     sampling_params = SamplingParams(
