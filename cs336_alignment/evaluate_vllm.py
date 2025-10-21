@@ -199,7 +199,7 @@ def main():
     
     # 配置路径
     math_validation_path = "./data/gsm8k/test.jsonl"
-    output_path = "qwen2.5_math_1.5b_zero_shot_math_results.json"
+    output_path = "./qwen2.5_math_1.5b_zero_shot_math_results.json"
     
     # 检查文件是否存在
     if not os.path.exists(math_validation_path):
@@ -243,6 +243,7 @@ def main():
     # 4. 初始化 vLLM 模型
     print("Initializing vLLM model...")
     llm = LLM(model="Qwen/Qwen2.5-Math-1.5B-Instruct")
+    
     
     # 5. 评估模型
     metrics = evaluate_vllm(
