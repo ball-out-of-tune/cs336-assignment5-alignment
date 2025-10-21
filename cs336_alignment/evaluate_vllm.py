@@ -5,7 +5,7 @@ from typing import List, Callable, Dict, Any
 from pathlib import Path
 
 from vllm import LLM, SamplingParams
-from cs336_alignment.drgrpo_grader import r1_zero_reward_fn
+from drgrpo_grader import r1_zero_reward_fn
 
 
 def load_math_validation_data(file_path: str) -> List[Dict[str, Any]]:
