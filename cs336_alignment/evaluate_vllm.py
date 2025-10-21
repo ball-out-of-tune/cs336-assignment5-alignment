@@ -130,6 +130,19 @@ def evaluate_vllm(
             'example_index': i
         }
         results.append(result)
+
+        # ✅ 每隔 40 个打印一次示例
+        if (i + 1) % 40 == 0 or i == 0:
+            print("\n" + "=" * 80)
+            print(f"[Example {i+1}/{len(outputs)}]")
+            print("- Prompt:")
+            print(prompt[:400] + ("..." if len(prompt) > 400 else ""))
+            print("- Model Output:")
+            print(generated_text[:400] + ("..." if len(generated_text) > 400 else ""))
+            print(f"- Gold Answer: {gold_answer}")
+            print(f"- Reward Result: {reward_result}")
+            print(f"- Correct: {is_correct}, Format OK: {is_format_correct}")
+            print("=" * 80 + "\n")
     
     # 计算评估指标
     total_examples = len(results)
