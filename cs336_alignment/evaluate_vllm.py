@@ -228,7 +228,7 @@ def main():
         gold_answers.append(final_answer)
     
     # 打印一些示例用于调试
-    print(f"\n示例提示: {prompts[0][:400]}...")
+    print(f"\n示例提示: {prompts[0][:800]}...")
     print(f"\n示例提示: {prompts[1][:400]}...")
     print(f"\n示例提示: {prompts[2][:400]}...")
     print(f"示例答案: {gold_answers[0]}")
