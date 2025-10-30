@@ -260,7 +260,7 @@ def main():
     
     # 4. 初始化 vLLM 模型
     print("Initializing vLLM model...")
-    llm = LLM(model="Qwen/Qwen2.5-Math-1.5B-Instruct")
+    llm = LLM(model="Qwen/Qwen2.5-Math-1.5B-Instruct", trust_remote_code=True)
     
     
     # 5. 评估模型
