@@ -29,7 +29,19 @@ Problem:
 
 
 My Solution:
+    ==================================================
+    EVALUATION SUMMARY
+    ==================================================
+    Model: Qwen2.5-0.5B-Instruct
+    Evaluation Type: zero_shot_math
+    Total Examples: 1319
+    Correct Answers: 33
+    Format Correct: 925
+    Accuracy: 0.0250 (2.50%)
+    Format Accuracy: 0.7013 (70.13%)
     the base model got all format wrong, but some answers are actually right
 
-Problem:
     
+
+Problem:
+
